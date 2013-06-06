@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int cal(int n) {
+	
+}
+
+int main() {
+	int n;
+	cin >> n;
+	int rm = 0;
+	int sum = 0;
+	int count = 0;
+	/*
+	int milestone[10] = {7483644, 77483646, 147483645, 247483646, 547485647, 847485647, 1147483647, 1847483646, };
+	int cmile[10] = {4989096, 51655764, 98322430, 164989097, 364990431, 564990431, 764989098, 1231655764, };
+	if (i > ) {
+		count = ;
+	}
+	*/
+	for (int i = 1; i <= n; ++i) {
+		rm = i % 3;
+		sum += rm;
+		sum %= 3;
+		if (!sum) {
+			++count;
+			sum = 0;
+		}
+	}
+	cout << count << endl;
+}
